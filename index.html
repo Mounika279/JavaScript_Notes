@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  #section1 {padding-top:50px;height:2100px;color: #fff; background-color: darkblue;}
+  #section2 {padding-top:50px;height:2700px;color: #fff; background-color:maroon;}
+  #section3 {padding-top:50px;height:1300px;color: #fff; background-color:teal;}
+  #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+@media screen and (max-width:1500px){
+    #section1{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1500px){
+    #section2{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1500px){
+    #section3{
+        height:auto;
+    } 
+}
+
+
+
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Mounika Notes</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">JS INTRO</a></li>
+          <li><a href="#section2">Similar features in Programming Lang</a></li>
+          <li><a href="#section3">Variables</a></li>
+           <li><a href="#section4">Section 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h3 style="color:#ff9800;">What is JS?</h3>
+  <p>JS gives life for the page.It is used for Dynamic functionality.<br>JavaScript is the world's most popular programming language.
+   js will execute line by line after completing and execyting one line it will go to another line if there is
+  any error then it will stop there.<br>so it is called as <b>Single Threaded language</b><br><br>
+<b style="color: burlywood;">For example:</b>To clearly understand and remember why is js single threaded??
+If we want to prepare any sweet so we will take carrot halwa as example We dont fry the carrots and do right <br>
+there is a certain process to do step by step we will first remove layer and then we will grate it and so on... so step by step 
+to remember easily i have took example carrothalwa as example.<br>
+<h3 style="color: yellowgreen;">What is Complier?</h3>
+In simple words,human to machine understandable language.
+<h3 style="color: gold;">What is interpretor?</h3>
+  <p>An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it.</p>
+<h3 style="color:khaki">What is Framework?</h3>
+Collection of library is called framework.<br>
+<b>Example</b>:Angular,React...
+<h3 style="color: lime;"> What is Library?</h3>
+Javascript libraries is a file that contains a set of prewritten functions or codes that you can repeatedly use while executing JavaScript tasks.
+<h3 style="color: navajowhite;">Synchronous and Asynchronous in JavaScript &#129300</h3>
+<b style="color: navajowhite;">Synchronous</b>
+synchronous means to be in a sequence, i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.<br>
+<b style="color: navajowhite;">Example:</b><br>
+console.log('First');<br>
+console.log('Second');<br>
+console.log('Third');<br><br>
+<b style="color: navajowhite;">Output:</b><br><br>
+First<br>
+Second<br>
+Third<br><br>
+<b style="color: navajowhite;">Asynchronous</b>
+Asynchronous code allows the program to be executed immediately whereas the synchronous code will block further execution of the remaining code until it finishes the current one.<br>
+ This may not look like a big problem but when you see it in a bigger picture you realize that it may lead to delaying the User Interface.It will run parallely.<br>
+ <b style="color: navajowhite;">Example</b><br>
+ console.log('first');<br>
+ setTimeout(function(){
+    console.log("second");
+},0)
+console.log('third')<br><br>
+<b style="color: navajowhite;">OUTPUT:</b><br><br>
+first<br>
+third<br>
+second<br>
+ </p>
+ <table class="table table-bordered ">
+    <thead>
+      <tr>
+        <th>Synchronous</th>
+        <th>Asynchronous</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Every statement in a function is executed sequentially. </td>
+        <td>Every statement in a function is not executed sequentially. It can also execute in parallel. </td>
+      </tr>
+      <tr>
+        <td>The execution of the next instruction depends upon the execution of the previous instruction. </td>
+        <td>The next instruction can execute while the previous one is still executing.</td>
+      </tr>
+      <tr>
+        <td>Synchronous is a single thread.</td>
+        <td>Asynchronous is multi-thread in nature. </td>
+      </tr>
+      <tr>
+        <td>Synchronous is slower in nature.</td>
+        <td>Asynchronous increases throughout as processes run in parallel.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 style="color: mediumturquoise;">what is console?&#128528;</h3>
+  <p>It prints output.<br>The log() method writes (logs) a message to the console.It is used for testing purpose.<br>
+    <b style="color: mediumturquoise;">SYNTAX:</b><br>
+    console.log(message);<br><br>
+    <b style="color: mediumturquoise;">Example:</b><br>
+    const first = 'Pandu';<br>
+    const last= 'Mounika';<br>
+    console.log(first + ' ' + name);<br><br>
+    <b style="color: mediumturquoise;">OUTPUT:</b><br>
+    Pandu Mounika
+</p>
+<h3 style="color: mediumvioletred;">Client-Server Model:</h3>
+<img src="./client-serve.png"height="200px" width="200px"><br><br>
+We will take a example of restaurant for CS Model,<br>
+Client-Seated person who comes to restaurant<br>
+Server-Who prepares food (Kitchen)<br>
+API-Waiter<br>
+when the client(person) orders food,the order will be accepted by (server) who prepares 
+food,so client will request for food and server will give response.<br><br>
+Client request sent &#x2192;&#8592;server gives response
+
+</div>
+
+<div id="section2" class="container-fluid">
+  <h2 style="color: gold;">Common features in programming Languages</h2>
+  <ul style="font-size: larger;">
+    <li>Variables</li>
+    <li>Datatypes</li>
+    <li>Operators</li>
+    <li>Control structures</li>
+    <li>Functions</li>
+  </ul>
+  <h3 style="color: limegreen;">VARIABLES &#129300;</h3>
+  <p>Variable are container which is used to store data.(or)<br>
+    To store data temporarily we have a concept variables
+  </p>
+  <h3 style="color:mediumspringgreen">DATATYPES &#129300;</h3>
+  <p>A data type is an attribute associated with a piece of data that tells a computer system how to interpret its value.
+    <br>Datatypes have different types:
+    <ul>
+        <li>Alphabets</li>-Collection pf characters in quotation is called string('') or("")
+        <li>Numbers</li>- (0-9)
+        <li>Boolean</li>- (True or False)
+    </ul>
+  </p>
+  <h3 style="color:khaki">&#129488;Primitive & Non-primitive Datatypes &#129488;</h3><br>
+  <p><b style="color:khaki">PRIMITIVE:</b>Primitive data types are basic and include such values as integers, boolean, characters and other simple stored memory types.</p>
+  <p><b style="color:khaki">NON-PRIMITIVE:</b>Nonprimitive data types are more complex values such as strings, objects, and arrays. </p>  
+  <b style="color:khaki">Example 1:</b><br>
+  int a=10;---this is static(Means it is fixed and here a refer to integer)<br>
+  a="Hello";---this is assigning<br>
+  <img src="./value store.jpg" height="150" width="150"><br><br>
+  So from the above image if we are storing a=10 then it will take only int value only 
+  because we have assigned it while declaring a is 10.<br><br>
+  <b style="color:khaki">Example 2:</b><br>
+  a=10-----;a=hello---(these are dynamic)<br><br>
+  <b style="color: coral;">*In javascript we particularly name it as which type of number..
+    it will allow all types,but in java we should specify particularly which type of
+    number is it
+  </b>
+  <h3>OPERATORS &#129488;</h3>
+  <ul>
+    <li>Arthematic</li>--(=,-,*,/,%)
+    <li>Assignment</li>--(=,≠,==)(== it will check)
+    <li>Logical</li>--(&&,||,!)
+    <li>Comparisional</li>(>,=,>=)
+  </ul>
+  <h3>Control strcutures?? &#129488;&#129488;</h3>
+  <p>It will control structures.</p>
+  <b>LOOPING  &#129488;</b>
+  <p>It will loop until we take further action on it.</p>
+  <b>Example:</b>
+  <p>choclate fountain--which we see in malls,theatres
+    it will go on until we off the switch loop continues....
+  </p>
+  <h3>CONDITIONAL STATEMENT  &#129488;</h3>
+  <p>It allow a program to execute different blocks of code based on whether a certain condition is true or false</p>
+  <b>Example:</b>
+  <p>"If the rug is dirty, then the rug should be vacuumed." "The rug is dirty" is the hypothesis, and "the rug should be vacuumed" is the conclusion.</p>
+  <h2>FUNCTIONS &#129488;&#129300;</h2>
+  <p>It is used for reusablity of code.Each function returns some value.Because of 
+    reusablity the space will also reduce.
+  </p>
+  <b>Example:</b>
+  <p style="font-size: medium;">Consider a garden,in which it has 10 plants and they are far to each other 
+    so the gardener keeps each tank beside it by that when ever he goes to that certain plant
+    he will take the water and pours water on it.....oops this is such a big process and takes
+    much time and space as well.. what should i do now &#128580;<br>
+    The best idea is keep a big tank which is sufficient for all the plants
+    and keep a pipe line and connect to each plant so that whenever the gardener
+    wants to plant water he just on it by this space and time will take less space as well
+    as time.(This is called as <b>INVOCATION</b>)
+    Time complexity--Less time
+    Space complexity--Less space
+  </p>
+  <p style="font-size: medium";>ohhhhh Whats Invocation is it different from calling &#129300;</p>
+  <p style="font-size: medium;">Noooo.... Both are same &#129321; Invocation--Calling a function when it is necessary</p>
+ <h1 style="font-size: xx-large; color:gold">JAVASCRIPT&#129300;&#129300;&#129300;</h1>
+  <h1 style="color:peru">WHAT??</h1>
+  <h1  style="color:yellowgreen">WHERE??</h1>
+  <h1  style="color: darkgreen;">WHY??</h1>
+  <h1  style="color:rosybrown">HOW??</h1><br>
+  <p style="color:peru; font-size: large;">WHAT---
+    Javascript is a scripting language.We use interpretor in this,the lines in
+    the code willmexecute line by line.When error comes it will stop.So it is called as<br>
+    <b style="color: #00bcd4;">Single Threaded Synchronous Dynamically typed language</b>
+</p>
+<p style="color: yellowgreen;font-size: large;">WHERE---
+    JS is used in both Frontend as well as Backend also.
+</p>
+<p style="color: darkgreen;font-size: large;">WHY---
+    JavaScript is so versatile that you can use it to easily add cool design elements such as animation, interactive maps, and scrolling video.
+</p>
+<p style="color: rosybrown;font-size: large;">HOW--
+    JS is used in internal and external.<br>
+    Internal-Using script tag.
+    External-In another file(index.js).
+</p>
+<h3 style="color:goldenrod">Defer???&#129296;</h3>
+<p>If we use defer keyword then we can write script tag anywhere...If we are not Internal-Using
+    then we have write at the last before body tag.
+</p>
+<h3 style="color:darkorange">BOM &#129320;</h3>
+<p>Browser Object Model<br>
+     It is a collection of objects exposed by the browser that allow JavaScript to
+      interact with the browser window, document.
+</p>
+<h3 style="color: yellowgreen;">DOM &#129320;</h3>
+<p>Document Object Model<br>
+   It is a programming interface for web documents. It represents the
+     page so that programs can change the document structure, style, and content.
+</p>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Variables &#129320;</h1>
+  <p>To store Data.It act as a container.Variables are categorised into 3 types:
+    <ul>
+        <li>Var</li>
+        <li>Char</li>
+        <li>Let</li>
+    </ul>
+    <ol>
+  <li> In this keywords,<b>VAR</b> is having life everywhere</li> 
+  <li>In var we can re-assign<br>
+EX:a=10,a="hello"</li>
+<li>If we are not assigned any value to a variable then defaultly undefined will be assigned</li>
+</ol>
+  </p>
+  <h3>Declaration</h3>
+  <p>var a,Here we are assigning 10 in a variable name</p>
+  <h3>Initialization</h3>
+  <p>Var a=10,Initializing a in 10(var)</p>
+  <h3>Assigning</h3>
+  <p> i=0,Means 0 is assigned to i.It is used to assign a value to a variable or property</p>
+
+<b>Declaration+Assigning=Initialization</b>
+<h3>What is Hoisting&#129300;&#129300;</h3>
+<p>Every declaration what we declared will go to the top of the page before execution
+    (default Behaviour)</p>
+<p>In terms of variables and constants, keyword var is hoisted and let and const does not allow hoisting.</p>
+<img src="hoisting ex.png"height="200px"width="200">
+<p>In the above example, variable a is used before declaring it. And the program works and displays the output 5.</p>
+<h3>Console????&#129488;&#129488;&#129488;</h3>
+<p>The Console can be used to log information as part of the JavaScript development process,
+     as well as allow you to interact with a web page by carrying out JavaScript expressions within the page's context. </p>
+<ul>
+    <li>If there is an error in console,<br>
+    For example:Conse.log(10)---It stops,it wont print.</li>
+</ul>
+<h3>What is scope??&#128175;</h3>
+<p>Life of a variable<br>There are 2 types of life:<br></p>
+<ol>
+    <li>Global</li>--Particular thing or person is having acessing everywhere.
+    <li>LOcal</li>--It is having limited access.(Specific)
+</ol>
+</div>
+
+
+
+
+
+<!-- 
+<div id="section4" class="container-fluid">
+  <h1>Section 4 </h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section5" class="container-fluid">
+  <h1>Section 5</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div> -->
+
+</body>
+</html>
