@@ -14,8 +14,11 @@
   #section1 {padding-top:50px;height:2100px;color: #fff; background-color: darkblue;}
   #section2 {padding-top:50px;height:2700px;color: #fff; background-color:maroon;}
   #section3 {padding-top:50px;height:1300px;color: #fff; background-color:teal;}
-  #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-  #section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  #section4 {padding-top:50px;height:1800px;color: #fff; background-color:darkgreen;}
+  #section5 {padding-top:50px;height:7500px;color: #fff; background-color:purple;}
+  #section6 {padding-top:50px;height:7500px;color: #fff; background-color:chocolate;}
+  #section7 {padding-top:50px;height:7500px;color: #fff; background-color:darkslategray;}
+  #section8 {padding-top:50px;height:7500px;color: #fff; background-color:plum;}
 @media screen and (max-width:1500px){
     #section1{
         height:auto;
@@ -28,6 +31,16 @@
 }
 @media screen and (max-width:1500px){
     #section3{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1500px){
+    #section4{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1500px){
+    #section5{
         height:auto;
     } 
 }
@@ -54,7 +67,11 @@
           <li><a href="#section1">JS INTRO</a></li>
           <li><a href="#section2">Similar features in Programming Lang</a></li>
           <li><a href="#section3">Variables</a></li>
-           <li><a href="#section4">Section 4</a></li>
+           <li><a href="#section4">Arrays & Objects</a></li>
+           <li><a href="#section5">Operators</a></li>
+           <li><a href="#section6">Conditional Statements</a></li>
+           <li><a href="#section7">Looping Statements</a></li>
+           <li><a href="#section8">Functions</a></li>
             </ul>
           </li>
         </ul>
@@ -308,22 +325,166 @@ EX:a=10,a="hello"</li>
     <li>LOcal</li>--It is having limited access.(Specific)
 </ol>
 </div>
-
-
-
-
-
-<!-- 
 <div id="section4" class="container-fluid">
-  <h1>Section 4 </h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <h1>Arrays & Objects</h1>
+  <h3>Primitive</h3>
+  <p>*In simple words primitive means basic.<br>
+  *We cannot change primitive datatypes.<br>
+* It will store in stack(LIFO)<br>
+* Primitive data types are inmutable(we can not change them)<br>
+</p>
+<h3> Non-Primitive</h3>
+  <p>*In simple words non-primitive means complex.<br>
+    *This is mutable(we can change the values)
+    <h2>Storing each value in each var it will take so much place so we use collection
+      & use Arrays and Objects.
+    </h2>
+    <h4>To store all in one conatiner we use non-primitive data types.</h4>
+  </p>
+  <h3>What is Array?&#129488</h3>
+  <p>It is a collection of different datatypes seperated with a comma is called array.<br>
+    * Array has an incomplete data.
+  *It is represented in square brackets[].</p>
+  <b>Example</b>
+  var a=[1,2,56,"mounika",98];<br>
+ Let's find out index value of "mounika" in the above array....<br>
+ console.log(a[3]);<br><br>
+ <img src="./Array example ss.png"height="100px" width="300px">
+ <h4>What is Objects?&#129488</h4>
+ <p>An object is a collection of related data.<br>It is represented in square brackets{}.<br>
+  * In objects we have key-pair values so we can understand clearly.<br>
+  * In objects data will be complete and clear because of key value pairs.
+  <b>Example</b>
+  var a={
+    a1:"bonagiri",
+    b1:"mounika",
+  }<br>
+  Console.log(a.a1);<br>
+ <b> Output:</b><br><br>
+  <img src="./Object ex ss.png" height="150px" width="300px"> <br><br>
+  We can find (a.a1) output in another way also..<br>
+  console.log(a["b1"]);<br><br>
+  <img src="./obj ex 2.png" height="150px" width="300px"></p>
+  <b>NOTE:</b> 
+  <p>*In the place of a1 we can write numbers also...</p>
+  <h3>What is heap??&#129488</h3>
+  <p>Random collection of data.</p>
+  <h3>What is Null??&#129488</h3>
+  <p>It wont assign defaultly. we will assign it...(0)</p>
+  <h3>What is Undefined??&#129488</h3>
+  <p>Defined but no assigned.</p>
+  <b>Ex:</b><p>Var a</p><br><br>
+  <i>Important</i><br><br>
+  ** Null+1=1<br><br>
+  ** Undefined+1=NaN.
 </div>
-<div id="section5" class="container-fluid">
-  <h1>Section 5</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div> -->
+ <div id="section5" class="container-fluid">
+  <h1>Operators</h1>
+  <p>An Operation between two operators.(a+b)Here,a and b are operands, + is the operation between them.</p>
+  <h3>Arthematic Operator</h3>
+  <p>In arthematic operators,we have (+,-,*,/,%,++,--).</p>
+  <h3>Comparsional Operator</h3>
+  <p>In Comparsional Operator,we have(>,<,<=,>=,==,==)</p>
+  <h3>Logical Operator</h3>
+  <p>In logical Operator we have (logical AND && , logical OR || ,  Logical NOT !)</p>
+  <h3>Assignment Operator</h3>
+  <p>In Assignment Operator,we have(=,+=,-=,*=,/=,%=,**=)</p>
+  <h3>Bitwise Operator</h3>
+  <p>In Bitwise Operator,we have(&,|,~,!,>>,<<)</p>
+  <h3>Ternary Operator</h3>
+  <p>In ternary Operator we have a condition</p>
+  <b>SYNTAX:</b>
+  <h3>condition ? trueExpression : falseExpression</h3>
+  <h3>Unary Operator</h3>
+  <p>Unary Plus Operator ( + ),
+    Unary Minus Operator ( – ),
+    Unary Increment Operator ( ++ ),
+    Unary Decrement Operator ( — ),
+    Logical NOT Operator ( ! ),
+    Bitwise NOT Operator ( ~ ),
+    typeof Operator,
+    delete Operator,
+    void Operator</p><br>
+    <h3>We will perform Increment and Decrement (pre and post) operators here...</h3><br>
+    <h4>Increment Pre</h4>
+    <b>INPUT</b><br><br>
+    <img src="./incr pre input.png" height="150px" width="300px"><br><br>
+    <b>OUTPUT</b><br><br>
+    <img src="./incr pre out.png" height="150px" width="300px"><br><br>
+    <h4>Increment Post</h4>
+    <b>INPUT</b><br><br>
+    <img src="./incr post input.png"height="150px" width="300px"><br><br>
+    <b>OUTPUT</b><br><br>
+    <img src="./incr post output.png"height="150px" width="300px"><br><br>
+    <h4>Decrement pre</h4>
+    <b>INPUT</b><br><br>
+    <img src="./dec pre input.png" height="150px" width="300px"><br><br>
+    <b>OUTPUT</b><br><br>
+    <img src="./dec pre output.png" height="150px" width="300px"><br><br>
+    <h4>Decrement Post</h4>
+    <b>INPUT</b><br><br>
+    <img src="./dec post input.png"height="150px" width="300px"><br><br>
+    <b>OUTPUT</b><br><br>
+    <img src="./dec post output.png"height="150px" width="300px"><br><br>
+   <h3>Arthematic Operator</h3>
+   <h3>Addition</h3><br>
+   <img src="./addition ex.png"height="250px" width="300px"><br><br>
+   <h3>Subraction</h3><br>
+   <img src="./sub ex.png"height="250px" width="300px"><br><br>
+   <h3>Multiplication</h3><br>
+   <img src="./mult ex.png"height="250px" width="300px"><br><br>
+   <h3>Division</h3><br>
+   <img src="./div ex.png"height="250px" width="300px"><br><br>
+   <h3>Modulus</h3><br>
+   <img src="./modu ex.png"height="230px" width="330px"><br><br>
+   <h3>Comparisional Operator</h3>
+   <h3>Greater than</h3>
+   <img src="./greater ex.png"height="230px" width="300px"><br><br>
+   <h3>Lesser than</h3>
+   <img src="./lesser ex.png"height="230px" width="300px"><br><br>
+   <h3>Greater than or equal to</h3>
+   <img src="./grea eq ex.png"height="230px" width="300px"><br><br>
+   <h3>Lesser than  or equal to</h3>
+   <img src="./less eq ex.png"height="230px" width="300px"><br><br>
+   <h3>double equal to</h3>
+   <img src="./doub equ.png"height="230px" width="300px"><br><br>
+   <h3>Logical Operator</h3>
+   <h3>Logical and (&&)</h3>
+   <img src="./logical &&.png"height="230px" width="300px"><br><br>
+   <h3>Logical or (||)</h3>
+   <img src="./logical or.png"height="230px" width="300px"><br><br>
+   <h3>Logical not(!)</h3>
+   <img src="./logical not.png"height="230px" width="300px"><br><br>
+   <h3>Ternary Operator</h3>
+   <h3>SYNTAX</h3>
+   <p>Condition?"Expression 1":"Expression 2"</p>
+   <p>(Conditional Operator) is a concise way to write a conditional (if-else) statement.
+     Ternary Operator takes three operands i.e. condition, true value and false value.</p>
+    <b>EXAMPLE</b><br><br>
+    <img src="./Ternary operator.png"height="200px" width="300px"><br><br>
+</div> 
+<div id="section6" class="container-fluid">
+  <h2>Conditional Statements</h2>
+  <p>These Statements are classified into 5 types:</p>
+  <ul>
+    <li>If statement</li>
+    <li>If-else statement</li>
+    <li>Else if statement</li>
+    <li>Nested if  statement</li>
+    <li>Switch case</li>
+  </ul>
+  <h3>If statment</h3>
+  <p>It is used  to specify a block of code to be executed,
+     if a specified condition is true </p>
+     <b>SYNTAX:</b>
+     <p>if (condition) {<br>
+      //  block of code to be executed if the condition is true<br>
+    }</p><br>
+    <img src="./If flow.png"height="400px" width="300px"><br><br>
+    <img src="./If example.png"height="200px" width="320px"><br><br>
+
+
+  </div>
 
 </body>
 </html>
