@@ -16,9 +16,9 @@
   #section3 {padding-top:50px;height:1300px;color: #fff; background-color:teal;}
   #section4 {padding-top:50px;height:1800px;color: #fff; background-color:darkgreen;}
   #section5 {padding-top:50px;height:7500px;color: #fff; background-color:purple;}
-  #section6 {padding-top:50px;height:7500px;color: #fff; background-color:chocolate;}
-  #section7 {padding-top:50px;height:7500px;color: #fff; background-color:darkslategray;}
-  #section8 {padding-top:50px;height:7500px;color: #fff; background-color:plum;}
+  #section6 {padding-top:50px;height:5250px;color: #fff; background-color:chocolate;}
+  #section7 {padding-top:50px;height:1800px;color: #fff; background-color:darkslategray;}
+  #section8 {padding-top:50px;height:2350px;color: #fff; background-color:darkgoldenrod;}
 @media screen and (max-width:1500px){
     #section1{
         height:auto;
@@ -44,9 +44,21 @@
         height:auto;
     } 
 }
-
-
-
+@media screen and (max-width:1500px){
+    #section6{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1500px){
+    #section7{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1500px){
+    #section8{
+        height:auto;
+    } 
+}
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -482,9 +494,145 @@ EX:a=10,a="hello"</li>
     }</p><br>
     <img src="./If flow.png"height="400px" width="300px"><br><br>
     <img src="./If example.png"height="200px" width="320px"><br><br>
-
-
-  </div>
-
+    <h3>If-else statment</h3>
+  <p> else statement to specify a block of code
+     to be executed if the condition is false.</p>
+     <b>SYNTAX:</b>
+     <p>if (condition) {<br>
+      //  block of code to be executed if the condition is true
+    }<br> else {<br>
+      //  block of code to be executed if the condition is false
+    }</p><br>
+    <img src="./if-else flow.png"height="400px" width="300px"><br><br>
+    <img src="./if-else ex.png"height="200px" width="320px"><br><br>
+    <h3> If-Else-if statment</h3>
+  <p> else if statement to specify a new condition
+     if the first condition is false.</p>
+     <b>SYNTAX:</b>
+     <p>if (condition1) {<br>
+      //  block of code to be executed if condition1 is true<br>
+    }<br>else if (condition2)<br> {
+      //  block of code to be executed if the condition1 is false and condition2 is true<br>
+     } <br>else{
+      //  block of code to be executed if the condition1 is false and condition2 is false
+    }</p><br>
+    <img src="./if else if flow.png" height="400px" width="300px"><br><br>
+    <img src="./if else if ex.png"height="200px" width="320px"><br><br>
+    <h3>Nested-if</h3>
+  <p> if statements inside if statements, this is called a nested if.</p>
+     <b>SYNTAX:</b>
+     <p>if condition1 {<br>
+      // code to be executed if condition1 is true<br>
+     if condition2 {<br>
+        // code to be executed if both condition1 and condition2 are true<br>
+     }<br>
+   }</p><br>
+    <img src="./nested if flow.png" height="500px" width="300px"><br><br>
+    <img src="./nested if ex.png"height="400px" width="320px"><br><br>
+    <h3>Switch-case</h3>
+    <p>The switch statement is used to perform different actions based 
+      on different conditions.</p>
+       <b>SYNTAX:</b>
+       <p>switch(expression) {<br>
+        case x:<br>
+          // code block<br>
+          break;<br>
+        case y:<br>
+          // code block<br>
+          break;<br>
+        default:<br>
+          // code block<br>
+      }<br>
+     </p><br>
+      <img src="./switch flow.png" height="500px" width="320px"><br><br>
+      <img src="./switch ex.png"height="300px" width="320px"><br><br>
+      </div>
+      <div id="section7" class="container-fluid">
+        <h1>Looping statements</h1>
+       <h3>It is classified into 3 types:</h3>
+       <ul>
+        <li>For loop</li>
+        <li>While loop</li>
+        <li>Do while</li>
+       </ul>
+       <h3>For-loop</h3>
+       <p>The for statement creates a loop with 3 optional expressions</p>
+       <b>SYNTAX:</b>
+       <p>for (expression 1; expression 2; expression 3) {<br>
+        // code block to be executed<br>
+      }</p>
+      <p>
+        Expression 1--initial value.<br>
+        Expression 2 -- condition.<br>
+        Expression 3 Increment/Decrement.<br>
+      </p>
+      <img src="./for ex.png"height="300px" width="320px"><br><br>
+      <h3>While-loop</h3>
+       <p>The while loop loops through a block of code as long as a specified condition is true.</p>
+       <b>SYNTAX:</b>
+       <p>while (condition) {<br>
+        // code block to be executed<br>
+      }</p>
+      <img src="./while ex.png"height="300px" width="320px"><br><br>
+      <h3> Do While-loop</h3>
+       <p>The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true,
+         then it will repeat the loop as long as the condition is true.</p>
+       <b>SYNTAX:</b>
+       <p>do {<br>
+        // code block to be executed<br>
+      }<br>
+      while (condition);</p>
+      <img src="./do-while ex.png"height="300px" width="320px">
+      </div>
+      <div id="section8" class="container-fluid" >
+        <h1>FUNCTIONS&#129300;&#129300;</h1>
+        <h3>It is used to reuse the code.Using the code when necessary</h3>
+        <p>
+          *In JS function will act as a value.<br>
+          *A JavaScript function is executed when "something" invokes it (calls it)..<br>
+          *In functions we can pass primitive,non-primitive and function also,because 
+          it can act as a value.
+          *Every function will return some value,
+          or else it will return undefined.
+          *Function also hoists.
+          *After writing return,no statements will execute..It is VOID area.
+        </p>
+        <b>SYNTAX</b>
+       function functionname(){<br>
+        //code to be executed<br>
+       }<br><br>
+       <p>Example below:when we call functionname()</p>
+       <img src="./func ex.png"height="300px" width="340px"><br><br>
+       <p style="font-size: larger;">When we call only function then.....</p><br>
+       <img src="funct ex1.png" height="400px" width="340px">
+       <h3>Invoking&#129320;&#129320;</h3>
+       <p>
+        The code inside the function will execute when
+         "something" invokes (calls) the function:<br>
+       When an event occurs (when a user clicks a button)<br>
+     When it is invoked (called) from JavaScript code<br>
+        Automatically (self invoked)
+       </p>
+       <h3>Return&#129320;</h3>
+       <p>
+        When JavaScript reaches a return statement, the function will stop executing.
+       </p>
+       <h3>Parameters & Arguments</h3>
+       <b>SYNTAX:</b>
+       <p>
+        function functionName(parameter1, parameter2, parameter3) {<br>
+          // code to be executed<br>
+        }
+       </p>
+       <p>
+        Function parameters are the names listed in the function definition.<br>
+     Function arguments are the real values passed to (and received by) the function.<br>
+       </p>
+       <h3>Lets take an example using parameters and arguments and perform multiplication.</h3><br>
+       <img src="./arguments ex.png"height="300px" width="300px">
+       <h3>Let's take and example of default parameters</h3>
+       <img src="./para def ex.png"height="300px" width="300px">
+      </div>
 </body>
 </html>
+
