@@ -19,6 +19,8 @@
   #section6 {padding-top:50px;height:5250px;color: #fff; background-color:chocolate;}
   #section7 {padding-top:50px;height:1800px;color: #fff; background-color:darkslategray;}
   #section8 {padding-top:50px;height:2350px;color: #fff; background-color:darkgoldenrod;}
+  #section9 {padding-top:50px;height:2550px;color: #fff; background-color:darkmagenta;}
+  #section10 {padding-top:50px;height:2350px;color: #fff; background-color:cadetblue;}
 @media screen and (max-width:1500px){
     #section1{
         height:auto;
@@ -59,6 +61,16 @@
         height:auto;
     } 
 }
+@media screen and (max-width:1700px){
+  #section9{
+        height:auto;
+    } 
+}
+@media screen and (max-width:1700px){
+  #section10{
+        height:auto;
+    } 
+}
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -84,6 +96,8 @@
            <li><a href="#section6">Conditional Statements</a></li>
            <li><a href="#section7">Looping Statements</a></li>
            <li><a href="#section8">Functions</a></li>
+           <li><a href="#section9">Types of Functions</a></li>
+           <li><a href="#section10">Strings and its methods</a></li>
             </ul>
           </li>
         </ul>
@@ -633,6 +647,89 @@ EX:a=10,a="hello"</li>
        <h3>Let's take and example of default parameters</h3>
        <img src="./para def ex.png"height="300px" width="300px">
       </div>
+      <div id="section9" class="container-fluid">
+        <h1>Types of functions</h1>
+        <ul>
+          <li>Named Function</li>
+          <li>Ananymous Function</li>
+          <li>Arrow Function</li>
+          <li>Immediate calling function</li>
+        </ul>
+        <h3>Named Function:</h3>
+        <p>In JavaScript, named functions are simply a way of referring to a function that employs the function keyword followed by a name that can be used as a callback to that function.
+           Normal functions with a name or identifier are known as named functions. </p>
+        <h4>Example:</h4>
+        <img src="./named fnctn.png"height="300px" width="350px">
+        <h3>Ananymous fnction:</h3>
+        <p>As the name suggests, “anonymous function” refers to a function that does not have a name or a title. In JavaScript, an anonymous function is something that is declared without an identification. It’s the distinction between a regular and an anonymous function. An anonymous function cannot be accessed after it is created; 
+          it can only be retrieved by a variable in which it is stored as a function value. </p>
+        <h4>Example:</h4>
+        <img src="./anany fnctn.png"height="300px" width="350px">
+        <h3>Arrow function</h3>
+        <p>Arrow function {()=>} is concise way of writing JavaScript functions in shorter way. Arrow functions were introduced in the ES6 version. They make our code more structured and readable.
+
+          Arrow functions are anonymous functions i.e. functions without a name but they are often assigned to any variable. They are also called Lambda Functions.</p>
+          <h4>Example:</h4>
+          <img src="./arrow fnctn.png"height="300px" width="350px">
+          <h3>Immediate Calling function</h3>
+          <p>This type of function is called immediately invoked as these functions are executed as soon as they are mounted to the stack,
+             it requires no explicit call to invoke the function. If we look at the syntax itself we have two pairs of closed parentheses, the first one contains the logic to be executed and the second one is generally what we include when we invoke a function, the second parenthesis is responsible to tell the 
+            compiler that the function expression has to be executed immediately.</p>
+            <h4>Example:</h4>
+            <img src="./immed functn.png"height="300px" width="350px">
+            <ul>
+              <li>We cannot hoist arrow and Ananymous function  because it is attached to
+                a variable. 
+              </li>
+              <li>Immediately invoked is not hoisted, because it is immediately invoked so need of hoisting</li>
+            </ul>
+            <h3>Currying Concept</h3>
+            <p>We simply wrap a function inside a function, which means we are going to return a function from another function to obtain this kind of translation. The parent function takes the first provided argument and returns the function that takes the next argument and this keeps on repeating till the number of arguments ends. Hopefully,
+               the function that receives the last argument returns the expected result.  </p>
+               <h4>Example:</h4>
+               <img src="./currying.png"height="300px" width="350px">
+            <h3>Why is currying useful in JavaScript?</h3>
+                <p>
+                --It helps us to create a higher-order function.<br>
+                --It reduces the chances of error in our function by dividing it into multiple smaller functions that can handle one responsibility.<br>
+               --It is very useful in building modular and reusable code.<br>
+                --It helps us to avoid passing the same variable multiple times.
+                --It makes the code more readable</p>
+      </div>
+
+      <div id="section10" class="container-fluid">
+        <h1>Strings And its methods</h1>
+        <h4>What is String??</h4>
+        <h4>Collection of characters enclosed in double quotation</h4>
+        <li>Ex:Var a="hello"</li>
+<li>Strings are primitive types and they are immumtabe</li>
+<h3>We can find length of a string and know the index values</h3>
+<img src="./str length.png"height="300px" width="350px">
+<h3>To know the ASCII values</h3>
+<h4>a-z:97-122;A-Z:65-90</h4>
+<h4>To know the ASCII values</h4>
+<img src="./Charcode.png"height="300px" width="350px">
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
